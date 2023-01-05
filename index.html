@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WOODAUM+82 GIFT SET</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-title" content="WOODAUM+82 GIFT SET" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="description" content="Please check the invitation to WOODAUM" />
+    <meta property="og:title" content="WOODAUM+82 GIFT SET" />
+    <meta
+      property="og:url"
+      content="hhttps://main--woodaum-invitation-02.netlify.app/"
+    />
+    <meta property="og:image" content="./images/invite_img_01.jpeg" />
+    <meta property="og:description" content="WOODAUM+82 GIFT SET" />
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="main_wrapper">
+          <div class="img_wrap" onclick="location.href='/pages/page.html'">
+            <img src="./images/invite_img_01.jpeg" alt="우다움 gift set" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const imgWrap = document.querySelector(".img_wrap");
+
+      imgWrap.addEventListener("mouseenter", (e) => {
+        const target = e.target.firstElementChild;
+        target.src = "./images/invite_img_02.jpeg";
+        console.log(target);
+      });
+
+      imgWrap.addEventListener("mouseleave", (e) => {
+        const target = e.target.firstElementChild;
+        target.src = "./images/invite_img_01.jpeg";
+      });
+    </script>
+  </body>
+</html>
